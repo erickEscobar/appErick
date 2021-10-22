@@ -1,5 +1,5 @@
 :root {
-    --color-amarillo: rgb(189, 189, 44);
+    --color-amarillo: #F0DB4F;
   }
 html {
     scroll-behavior: smooth;
@@ -18,12 +18,14 @@ h1{
 }
 
 section{
+    margin-top: 10px !important;
     height: 100vh;
     padding-top: 60px;
     margin: 0 30px;
 }
 #menu{
     background-color: rgba(24, 24, 24, 0.459);
+    overflow-y: auto;
     position: fixed;
     z-index: 998;
     width: 100%;
@@ -175,15 +177,57 @@ footer{
     font-size: 1.5em;
 }
 
-/* Codigo para cambiar a dark light */
-/* main{
-    background-color: black;
+/* Responsive tester */
+#formTester{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-h2, h3, #mostrarReloj{
-    color: var(--color-amarillo);
+/* Network Status */
+.online, .offline{
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1b5e20;
+    color: white;
 }
-.stage{
-    background-color: white;
-    outline: 10px white solid;
-} */
+.offline{
+    background-color: #b71c1c;
+}
+
+/* Filtros de busqueda */
+.galeriaBusqueda{
+    /* background-color: #b71c1c; */
+    margin-top: 35px !important;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.galeriaBusqueda .divImg{
+    height: 200px;
+    margin-bottom: 20px;
+}
+.galeriaBusqueda .divImg img{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    margin: 0;
+}
+.galeriaBusqueda .divImg p{
+    margin: auto;
+    margin-top: -4px;
+    width: 90%;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
