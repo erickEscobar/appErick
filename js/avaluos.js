@@ -3,7 +3,7 @@ console.log(contenido)
 
 const getContenido = async (id) => {
     try {
-        let url = `../assets/img/avaluos-html/${id}`;
+        let url = `../assets/avaluos-html/${id}`;
         let resp = await fetch(url);
         let html = await resp.text();
 
