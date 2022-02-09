@@ -4,7 +4,7 @@ console.log(contenido)
 const getContenido = async (id) => {
     try {
         let url = `../assets/avaluos-html/${id}`;
-        let resp = await fetch(url, {headers: new Headers()});
+        let resp = await fetch(url, {headers: {"Content-type": "text/html; charset=utf-8"}});
         let html = await resp.text();
 
         if(!resp.ok) throw {status: resp.status, statusText: resp.statusText}//Si la respuesta es un error se va hacia el catch
