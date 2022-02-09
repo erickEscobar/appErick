@@ -123,11 +123,14 @@ header nav li{
 header nav li a{
     color: #fff;
 }
+.linkActivado{
+    font-weight: 900;
+}
 
 /* MAIN */
 /* portada */
 div.portada{
-    background: linear-gradient(0deg, rgba(6, 22, 64, 0.31), rgba(6, 22, 64, 0.31)), url(../assets/img/portada.jpg);
+    background: linear-gradient(0deg, rgba(6, 22, 64, 0.31), rgba(6, 22, 64, 0.31)), url(../assets/img/jpg-png/portada.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,6 +248,7 @@ footer section #copyright{
 .avaluosContendedor{
     display: flex;
     margin: 25px 20px 180px 120px;
+    min-height: 602px;
 }
 .avaluosContendedor h2{
     color: #000;
@@ -257,16 +261,17 @@ footer section #copyright{
     width: 350px;
     text-align: center;
     margin-right: 40px;
+    max-height: 602px;
 }
 .listaAvaluos ul{
     list-style: none;
-    margin-bottom: 45px;
-    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    margin-top: 16px;
 }
 .listaAvaluos ul li{
     background-color: var(--colorDiv);
     border-bottom: solid 1px rgba(59, 56, 56, 0.363);
-    padding: 15px 0;
+    /* padding: 15px 0; */
 }
 .listaAvaluos ul li:hover{
     transition-property: border-bottom;
@@ -274,6 +279,9 @@ footer section #copyright{
     transition-timing-function: linear;
     border-bottom: solid 1px rgba(59, 56, 56, 0.863);
     cursor: pointer;
+}
+.listaAvaluos ul li p{
+    padding: 15px 0;
 }
 .conceptoAvaluos{
     margin-left: 80px;
@@ -298,6 +306,7 @@ footer section #copyright{
     display: block;
     border: 5px solid #C8C1C1;
     box-sizing: border-box;
+    max-width: 400px;
 }
 /* cobertursa */
 .coberturaSection{
@@ -310,7 +319,7 @@ footer section #copyright{
     margin-top: 35px;
 }
 
-/* ----------- PAG SERVICIOS ----------- */
+/* ----------- PAG CONTACTOS ----------- */
 /* MAIN */
 /* contactos */
 .contactanosContenedor{
@@ -385,3 +394,72 @@ footer section #copyright{
 }
 
 
+/* situaciones perito */
+.situacionesPerito{
+    margin: 110px 80px 80px;
+}
+.situacionesPerito div{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.situacionesPerito div h3{
+    color: var(--color3);
+    /* cursor: pointer; */
+}
+.situacionesPerito div p{
+    margin-left: 10px;
+    
+}
+
+/* sabias que */
+.sabiasQue{
+    display: flex;
+    flex-direction: column;
+}
+.sabiasQue div h2{
+    text-align: center;
+    border-bottom: solid 5px rgba(59, 56, 56, 0.363);
+}
+.sabiasQue div p{
+    text-align: justify;
+    margin-top: 10px;
+}
+.sabiasQue div ul{
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+
+/* Procedimiento para la valoracion */
+.procedimientoValoracion{
+    margin: 200px 80px 160px;
+}
+.procedimientoValoracion ol.p{
+    text-align: justify;
+}
+.procedimientoValoracion ol, .procedimientoValoracion ul{
+    margin: 0 0 0 28px;
+}
+.procedimientoValoracion ol li{
+    margin: 20px 0;
+}
+.procedimientoValoracion ul li{
+    margin: 10px;
+}
+
+
+
+/* ocultar y mostrar contenido */
+.ocultarContenido{
+    visibility: hidden;
+    display: none;
+}
+.mostrarContenido{
+    visibility: visible;
+    display: block;
+}
+.mostrarCursor{
+    cursor: pointer;
+    user-select: none;
+}
