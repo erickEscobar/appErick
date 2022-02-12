@@ -7,8 +7,8 @@ elementos.forEach(el => {
 document.addEventListener("click", e => {
     if(e.target.matches("[data-ocultar]")){
         let element = e.target;
+        element.nextElementSibling.classList.toggle("mostrarContenido");
         element.nextElementSibling.classList.toggle("ocultarContenido");
         console.log(element);
     }
 });
-
