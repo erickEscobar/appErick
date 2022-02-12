@@ -453,11 +453,16 @@ footer section #copyright{
 /* ocultar y mostrar contenido */
 .ocultarContenido{
     visibility: hidden;
-    display: none;
+    max-height: 1px;
+    opacity: 0;
 }
 .mostrarContenido{
+    transition-property: max-height, opacity;
+    transition-duration: .9s, .6s;
+    transition-timing-function: linear, cubic-bezier(0.46, 0.12, 0.36, 0.72);
     visibility: visible;
-    display: block;
+    max-height: 1000px;
+    opacity: 1;
 }
 .mostrarCursor{
     cursor: pointer;
