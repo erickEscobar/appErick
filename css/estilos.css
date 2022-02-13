@@ -454,15 +454,15 @@ footer section #copyright{
 .ocultarContenido{
     visibility: hidden;
     max-height: 1px;
-    opacity: 0;
+    overflow: hidden;
 }
 .mostrarContenido{
-    transition-property: max-height, opacity;
-    transition-duration: .9s, .6s;
-    transition-timing-function: linear, cubic-bezier(0.46, 0.12, 0.36, 0.72);
+    overflow: hidden;
+    transition-property: max-height,;
+    transition-duration: 2s;
+    transition-timing-function: linear;
     visibility: visible;
     max-height: 1000px;
-    opacity: 1;
 }
 .mostrarCursor{
     cursor: pointer;
