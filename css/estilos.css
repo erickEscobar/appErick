@@ -130,8 +130,8 @@ header nav li a{
 /* MAIN */
 /* portada */
 div.portada{
-    background: linear-gradient(0deg, rgba(6, 22, 64, 0.31), rgba(6, 22, 64, 0.31)), url(../assets/img/jpg-png/portada.jpg);
-    background-position: center;
+    background: linear-gradient(0deg, rgba(6, 22, 64, 0.71), rgba(6, 22, 64, 0.71)), url(../assets/img/jpg-png/portada2-min.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -176,6 +176,10 @@ div.div.div-quienes-somos{
     display: block;
     margin: 50px auto 0;
     width: 180px;
+}
+.div-quienes-somos section img{
+    width: 500px;
+    height: fit-content;
 }
 
 footer section{
@@ -448,20 +452,41 @@ footer section #copyright{
     margin: 10px;
 }
 
+/* ----------- NORMATIVA LEGAL ----------- */
+/* normativa legal */
+.normativa-legal{
+    margin: 100px 80px 160px;
+}
+.normativa-legal ul li{
+    margin: 30px 0 20px;
+}
 
+/* ----------- ACREDITACIONES Y CURSOS ----------- */
+/* acreditaciones y cursos */
+.acredi-cursos{
+    margin: 100px 80px 160px;
+}
+.acredi-cursos ul{
+    margin: 0 0 0 20px;
+    /* list-style: none; */
+}
+.acredi-cursos ul li{
+    margin: 20px 0 15px;
+}
+.acredi-cursos ul li:hover a{
+    color: rgb(0, 81, 255);
+}
 
 /* ocultar y mostrar contenido */
 .ocultarContenido{
-    visibility: hidden;
-    max-height: 1px;
+    max-height: .1px;
     overflow: hidden;
 }
 .mostrarContenido{
-    overflow: hidden;
-    transition-property: max-height,;
+    transition-property: max-height;
     transition-duration: 2s;
     transition-timing-function: linear;
-    visibility: visible;
+    overflow: hidden;
     max-height: 1000px;
 }
 .mostrarCursor{
